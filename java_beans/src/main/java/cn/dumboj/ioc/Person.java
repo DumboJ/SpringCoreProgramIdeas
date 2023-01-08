@@ -1,5 +1,7 @@
 package cn.dumboj.ioc;
-
+/**
+ * Person描述 POJO
+ * */
 public class Person {
     private String name;
     private Integer age;
