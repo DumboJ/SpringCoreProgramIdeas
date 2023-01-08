@@ -1,6 +1,5 @@
-package cn.dumboj.ioc;
+package cn.dumboj.beaninfo;
 
-import java.awt.*;
 import java.beans.*;
 import java.util.stream.Stream;
 /**
