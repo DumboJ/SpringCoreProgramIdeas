@@ -1,1 +1,1 @@
-GEEK leason SpringCore Program demos note
+Geek leason SpringCore Program demos note
