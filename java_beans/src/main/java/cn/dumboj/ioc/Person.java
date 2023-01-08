@@ -1,6 +1,7 @@
 package cn.dumboj.ioc;
 /**
  * Person描述 POJO
+ * 贫血模型的POJO 只有get/set方法
  * */
 public class Person {
     private String name;
