@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- 依赖注入案例 -->
+
+    <!--通过导入复用 依赖查找的xml文件-->
+    <import resource="dependency-lookup-context.xml"/>
+
+    <!--依赖来源1：自定义bean bean的顺序按照声明先后获取-->
+    <bean id="userRepository" class="cn.dumboj.repository.UserRepository"
+          autowire="byType"><!--Auto-wiring-->
+        <!-- 硬编码手动配置 对象注入 bean的顺序按照ref顺序先后获取-->
+        <!--<property name="users">
+            <util:list>
+                <ref bean="superUser"/>
+                <ref bean="user"/>
+            </util:list>
+        </property>-->
+    </bean>
+</beans>

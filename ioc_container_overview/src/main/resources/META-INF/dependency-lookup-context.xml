@@ -19,7 +19,8 @@
                 <property name="address" value="北京市"/>
         </bean>
 
-        <!--指定bean名称，通过ObjectFactoryCreatingFactoryBean 延时加载获取上下文已有的bean，不需要类型转换
+        <!--
+        指定bean名称，通过ObjectFactoryCreatingFactoryBean 延时加载获取上下文已有的bean，不需要类型转换
                 todo 当设置bean的parent为user时，primary为true 时编译异常
                  Error setting property values;
                  nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'id' of bean class
