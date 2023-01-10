@@ -7,6 +7,7 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.env.Environment;
 
 /**
  * Spring 依赖注入 案例
@@ -20,7 +21,7 @@ public class DependencyInjectDemo {
         /**依赖来源1：自定义bean*/
 
         /**注入的bean有两种方式：
-         * 1. 名称id注入
+         * 1. 名称id名称注入
          *      <util:list>
          *          <ref name=""></ref>
          *      </util:list>
@@ -57,8 +58,13 @@ public class DependencyInjectDemo {
         /**注入ObjectFactory<ApplicationContext>*/
         ObjectFactory<ApplicationContext> apxObjectFactory = userRepository.getApxObjectFactory();
         ApplicationContext applicationContext = apxObjectFactory.getObject();
-        //todo true  当内建非bean对象是ApplicationContext时，为啥与BeanFactory对象是同一对象  能够说明依赖注入的来源
+        //todo true  当内建非bean对象是ApplicationContext时，为啥与BeanFactory对象是同一对象  说明依赖注入的来源？？
         System.out.println(beanfactory == applicationContext);
+
+
+        /**依赖来源3：容器内建Bean*/
+        Environment environment = beanfactory.getBean(Environment.class);
+        System.out.println("获取容器内建Bean Environment类型的Bean：" + environment);
     }
     
 }
