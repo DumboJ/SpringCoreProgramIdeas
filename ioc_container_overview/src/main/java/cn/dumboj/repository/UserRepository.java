@@ -16,6 +16,7 @@ public class UserRepository {
     private BeanFactory beanFactory;
 
     private ObjectFactory<User> userObjectFactory;
+    //说明了 Ioc依赖注入的来源，其实是包含于ApplicationContext中的具体BeanFactory
     private ObjectFactory<ApplicationContext> apxObjectFactory;
     public Collection<User> getUsers() {
         return users;

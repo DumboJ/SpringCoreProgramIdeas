@@ -58,7 +58,8 @@ public class DependencyInjectDemo {
         /**注入ObjectFactory<ApplicationContext>*/
         ObjectFactory<ApplicationContext> apxObjectFactory = userRepository.getApxObjectFactory();
         ApplicationContext applicationContext = apxObjectFactory.getObject();
-        //todo true  当内建非bean对象是ApplicationContext时，为啥与BeanFactory对象是同一对象  说明依赖注入的来源？？
+        //todo true  当内建非bean对象是ApplicationContext时，为啥与BeanFactory对象是同一对象  说明依赖注入的来源？？  说明了 Ioc依赖注入的来源，其实是包含于ApplicationContext中的具体BeanFactory
+       //todo 关键 ==> AbstractRefreshableApplicationContext 的成员变量 private DefaultListableBeanFactory beanFactory;对应具体使用的BeanFactory
         System.out.println(beanfactory == applicationContext);
 
 
