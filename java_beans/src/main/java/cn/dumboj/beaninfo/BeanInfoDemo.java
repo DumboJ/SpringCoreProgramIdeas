@@ -1,11 +1,13 @@
 package cn.dumboj.beaninfo;
 
+import bean.Person;
+
 import java.beans.*;
 import java.util.stream.Stream;
 /**
  * Java Bean 信息
- * @see java.beans.BeanInfo
- * 通过spring 的自省方式或者Java bean 属性
+ * {@link java.beans.BeanInfo}
+ * 通过spring 的自省方式获取Java bean 属性
  * */
 public class BeanInfoDemo {
     public static void main(String[] args) throws IntrospectionException {
