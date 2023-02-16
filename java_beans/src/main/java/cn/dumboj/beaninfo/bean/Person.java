@@ -1,4 +1,4 @@
-package bean;
+package cn.dumboj.beaninfo.bean;
 /**
  * Person描述 POJO
  * 贫血模型的POJO 只有get/set方法

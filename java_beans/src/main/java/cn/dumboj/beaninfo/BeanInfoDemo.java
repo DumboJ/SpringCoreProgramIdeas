@@ -1,6 +1,6 @@
 package cn.dumboj.beaninfo;
 
-import bean.Person;
+import cn.dumboj.beaninfo.bean.Person;
 
 import java.beans.*;
 import java.util.stream.Stream;

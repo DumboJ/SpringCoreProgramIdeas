@@ -1,4 +1,4 @@
-package bean_name;
+package cn.dumboj.beaninfo.bean_name;
 
 import cn.dumboj.domain.User;
 import org.springframework.context.ApplicationContext;

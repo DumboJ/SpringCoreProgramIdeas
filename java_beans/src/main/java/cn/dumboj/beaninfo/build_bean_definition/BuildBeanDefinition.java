@@ -1,6 +1,6 @@
-package build_bean_definition;
+package cn.dumboj.beaninfo.build_bean_definition;
 
-import bean.Person;
+import cn.dumboj.beaninfo.bean.Person;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
