@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+        <!--通过静态工厂方法-->
+        <bean id="personLi" class="cn.dumboj.beaninfo.bean.Person" factory-method="creatPerson"/>
+
+        <!--Bean工厂方法  PersonFactory接口中的默认实现-->
+        <bean id="factoryInstantiationPerson" factory-bean="personFactory" factory-method="factoryCreatePerson"/>
+        <!--工厂方法的实现类作为 factory-bean-->
+        <bean id="personFactory" class="cn.dumboj.beaninfo.instantiation.factory.PersonFactoryImpl"></bean>
+</beans>

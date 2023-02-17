@@ -22,4 +22,19 @@ public class Person {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    public static Person creatPerson() {
+        Person person = new Person();
+        person.setAge(22);
+        person.setName("李行亮");
+        return person;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
