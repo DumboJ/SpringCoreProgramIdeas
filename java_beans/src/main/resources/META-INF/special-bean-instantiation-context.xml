@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+       <!--
+              通过ServiceLoadFactoryBean 实例化bean
+              id自定义
+              property 需指定对应实例化接口类型 >>> 相当于传统java类型ioc的load(interface.class,ClassLoader classLoader)
+       -->
+       <bean id="personByServiceLoaderFactoryBean" class="org.springframework.beans.factory.serviceloader.ServiceLoaderFactoryBean">
+              <property name="serviceType" value="cn.dumboj.beaninfo.instantiation.factory.PersonFactory"/>
+       </bean>
+</beans>

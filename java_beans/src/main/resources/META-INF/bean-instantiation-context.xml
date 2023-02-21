@@ -12,4 +12,8 @@
         <bean id="factoryInstantiationPerson" factory-bean="personFactory" factory-method="factoryCreatePerson"/>
         <!--工厂方法的实现类作为 factory-bean-->
         <bean id="personFactory" class="cn.dumboj.beaninfo.instantiation.factory.PersonFactoryImpl"></bean>
+
+
+        <!--FactoryBean方式实例化  在对应的实现类中implements FactoryBean并实现getObject()/getType()-->
+        <bean id="bean-by-factoryBean" class="cn.dumboj.beaninfo.instantiation.factory.PersonFactoryBean"/>
 </beans>
