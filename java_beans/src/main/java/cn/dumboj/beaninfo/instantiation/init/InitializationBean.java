@@ -35,7 +35,7 @@ public class InitializationBean {
         context.register(InitializationBean.class);
         //刷新 Spring 应用上下文
         context.refresh();
-
+        //初始化发生阶段
         PersonFactory bean = context.getBean(PersonFactory.class);
         //关闭 应用上下文
         context.close();

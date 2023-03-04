@@ -48,4 +48,12 @@ public class PersonFactoryImpl implements PersonFactory, InitializingBean, Dispo
     public void doDestory() {
         System.out.println(" 自定义销毁方法的方式 初始化中...");
     }
+
+    /**
+     * Spring bean GC 回调
+     * */
+    @Override
+    public void finalize() throws Throwable {
+        System.out.println("当前PersonFactoryImpl 对象正在被垃圾回收... ...");
+    }
 }
