@@ -11,6 +11,7 @@
     <modules>
         <module>java_beans</module>
         <module>ioc_container_overview</module>
+        <module>dependency-lookup</module>
     </modules>
 
     <properties>
@@ -34,4 +35,10 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+    </dependencies>
 </project>
