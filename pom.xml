@@ -12,6 +12,7 @@
         <module>java_beans</module>
         <module>ioc_container_overview</module>
         <module>dependency-lookup</module>
+        <module>dependency-inject</module>
     </modules>
 
     <properties>
