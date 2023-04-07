@@ -5,6 +5,15 @@ import cn.dumboj.domain.User;
 public class UserHolder {
     private User user;
 
+    public UserHolder() {
+    }
+    /**
+     * Support Annotation
+     * */
+    public UserHolder(User user) {
+        this.user = user;
+    }
+
     public User getUser() {
         return user;
     }

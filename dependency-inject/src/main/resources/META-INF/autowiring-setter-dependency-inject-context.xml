@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+        <import resource="classpath:META-INF/dependency-lookup-context.xml"/>
+        <bean class="cn.dumboj.holder.UserHolder"
+
+              autowire="byType">
+               <!-- <property name="user" ref="superUser"/> 替换成 byName setter-->
+        </bean>
+<!--
+        <bean id="user" class="cn.dumboj.domain.User">
+                <property name="id" value="1"/>
+                <property name="name" value="dumboj"/>
+        </bean>
+        &lt;!&ndash;.NoUniqueBeanDefinitionException:
+        No qualifying bean of type 'cn.dumboj.domain.User' available:
+        expected single matching bean but found 2: user,superUser&ndash;&gt;
+        <bean id="superUser" class="cn.dumboj.domain.SuperUser" parent="user" primary="true">
+                <property name="address" value="北京市"/>
+        </bean>
+
+        &lt;!&ndash;
+        指定bean名称，通过ObjectFactoryCreatingFactoryBean 延时加载获取上下文已有的bean，不需要类型转换
+                todo 当设置bean的parent为user时，primary为true 时编译异常
+                 Error setting property values;
+                 nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'id' of bean class
+                 提示修改id的set方法为void setId(){//空实现}编译通过，why？？？
+
+        &ndash;&gt;
+        <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean" >
+                <property name="targetBeanName" value="user"></property>
+        </bean>-->
+</beans>
