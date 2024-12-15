@@ -77,6 +77,7 @@ public class DependencyLookUpDemo {
 
     /**
      * id查找 -- 延迟查找
+     * {@link org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean}
      * 指定bean名称，通过ObjectFactoryCreatingFactoryBean 延时查找获取上下文已有的bean，泛型不再需要类型转换
      * */
     private static void lookUpLazy(BeanFactory beanFactory) {
