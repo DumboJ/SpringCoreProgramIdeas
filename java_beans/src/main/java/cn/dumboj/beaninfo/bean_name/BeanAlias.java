@@ -6,6 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Bean 别名
+ * {@link org.springframework.beans.factory.support.BeanNameGenerator}
+ * {@link org.springframework.context.annotation.AnnotationBeanNameGenerator}
  * */
 public class BeanAlias {
     public static void main(String[] args) {

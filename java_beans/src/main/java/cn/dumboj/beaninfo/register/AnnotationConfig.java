@@ -13,6 +13,10 @@ import java.util.Map;
  *  3种方式
  *
  *  Spring容器中的Bean不重复注册
+ *
+ *  {@link @Component}
+ *  {@link @Import}
+ *  {@link @Bean}
  * */
 
 //3。通过@Import 方式注册

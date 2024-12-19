@@ -8,7 +8,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.util.StringUtils;
 
 import java.util.Map;
-
+/**
+ * bean定义注册
+ * {@link BeanDefinitionRegistry}
+ * */
 public class API_Register {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
