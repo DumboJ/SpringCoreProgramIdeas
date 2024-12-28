@@ -13,6 +13,7 @@
         <module>ioc_container_overview</module>
         <module>dependency-lookup</module>
         <module>dependency-inject</module>
+        <module>dependency_source</module>
     </modules>
 
     <properties>
