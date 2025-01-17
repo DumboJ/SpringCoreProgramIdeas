@@ -17,6 +17,8 @@
         <module>bean-scope</module>
         <module>bean-lifecycle</module>
         <module>resource</module>
+        <module>message-source</module>
+        <module>databiind</module>
     </modules>
 
     <properties>
