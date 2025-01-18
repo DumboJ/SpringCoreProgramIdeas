@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/bean-lifecycle/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bean-scope/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bean-scope/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/databiind/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/databiind/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dependency-inject/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dependency-inject/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dependency-lookup/src/main/java" charset="UTF-8" />
