@@ -19,6 +19,7 @@
         <module>resource</module>
         <module>message-source</module>
         <module>databiind</module>
+        <module>type-conversion</module>
     </modules>
 
     <properties>
