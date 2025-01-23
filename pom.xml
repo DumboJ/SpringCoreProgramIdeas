@@ -20,6 +20,7 @@
         <module>message-source</module>
         <module>databiind</module>
         <module>type-conversion</module>
+        <module>generic-info</module>
     </modules>
 
     <properties>
