@@ -5,6 +5,6 @@ package cn.dumboj;
  * */
 public class JavaGenericDemo {
     public static void main(String[] args) {
-
+        System.out.println("泛型基础");
     }
 }
